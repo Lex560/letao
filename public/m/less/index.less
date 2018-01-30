@@ -1,0 +1,119 @@
+@import 'base.less';
+/* 主页的主体容器 */
+
+html,
+body {
+    height: 100%;
+}
+
+#wrapper {
+    height: 100%;
+    .list {
+        padding: 45px 0;
+        background-color: #fff;
+        #nav {
+            padding: 10px;
+            .mui-row {
+                >div {
+                    >a {
+                        display: block;
+                        >img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        #banner {
+            padding: 0 10px;
+            >.mui-row {
+                >div {
+                    //左侧
+                    >.mui-row {
+                        >div {
+                            >a {
+                                display: block;
+                                >div {
+                                    /* 因为在mui-col-xs-6的列的外面套了一个a mui的浮动的样式没有设置到 再次单独添加一个浮动 */
+                                    float: left;
+                                    >img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    >a {
+                        //右侧
+                        display: block;
+                        >img {
+                            width: 100%;
+                            height: 242px;
+                        }
+                    }
+                }
+            }
+        }
+        #products {
+            padding: 0 10px;
+            .brand-area {
+                a {
+                    display: block;
+                    padding: 3px 0;
+                    >img {
+                        width: 100%;
+                    }
+                }
+            }
+            .sport-area,
+            .women-area,
+            .man-area {
+                padding: 10px 0;
+                >div {
+                    >a {
+                        display: block;
+                        >img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .mui-row {
+                    margin-top: 3px;
+                    >div {
+                        .product {
+                            margin: 4px;
+                            border: 1px solid #ccc;
+                            box-sizing: border-box;
+                            box-shadow: 0px 0px 3px #ccc;
+                            padding: 10px;
+                            text-align: center;
+                            >a {
+                                display: block;
+                                >img {
+                                    width: 100%;
+                                }
+                                .name {
+                                    font-size: 14px;
+                                    color: #8f8f94;
+                                }
+                                .price {
+                                    font-size: 12px;
+                                    >span {
+                                        color: #f30;
+                                        margin-right: 5px;
+                                    }
+                                    >del {
+                                        color: #8f8f94;
+                                    }
+                                }
+                            }
+                            >button {
+                                background-color: #006699;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
